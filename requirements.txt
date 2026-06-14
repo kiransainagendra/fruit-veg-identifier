@@ -1,2 +1,5 @@
-tensorflow
 streamlit
+tensorflow-cpu
+numpy
+pillow
+keras
