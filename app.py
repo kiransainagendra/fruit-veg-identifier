@@ -107,7 +107,7 @@ st.markdown(f'<div class="title">{translations[language]["title"]}</div>', unsaf
 @st.cache_resource
 def load_cached_model():
     model_path = 'Image_classify.keras' if os.path.isfile('Image_classify.keras') else r'C:\My_Project\Image_classification\Image_classify.keras'
-    return load_model(model_path)
+    return load_model(model_path,compile=False)
 
 model = load_cached_model()
 
